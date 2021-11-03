@@ -46,7 +46,7 @@ window.addEventListener('load', () => {
 if ('serviceWorker' in navigator) {
     window.addEventListener('load', () => {
         navigator.serviceWorker
-            .register('./serviceWorker.js', { scope: './' })
+            .register('../serviceWorker.js', { scope: '../' })
             .then(reg => {
                 console.log('service worker registered with scope: ', reg.scope);
             })
