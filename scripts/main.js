@@ -42,16 +42,3 @@ window.addEventListener('load', () => {
 
     container.appendChild(fragment);
 });
-
-if ('serviceWorker' in navigator) {
-    window.addEventListener('load', () => {
-        navigator.serviceWorker
-            .register('../serviceWorker.js', { scope: '../' })
-            .then(reg => {
-                console.log('service worker registered with scope: ', reg.scope);
-            })
-            .catch(err => {
-                console.log('service worker error: ', err);
-            });
-    });
-}
