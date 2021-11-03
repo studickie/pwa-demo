@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper--page-constraints {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.list--no-style {
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+}
