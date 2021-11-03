@@ -28,7 +28,20 @@
             <ul id="container" class="list--no-style"></ul>
         </div>
     </main>
-    <script src="./serviceWorker.js" type="text/javascript"></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker
+                    .register('./serviceWorker.js')
+                    .then(reg => {
+                        console.log('service worker registered with scope: ', reg.scope);
+                    })
+                    .catch(err => {
+                        console.log('service worker error: ', err);
+                    });
+            });
+        }
+    </script>
     <script src="./scripts/main.js" type="text/javascript"></script>
 </body>
 
