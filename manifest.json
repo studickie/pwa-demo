@@ -1,8 +1,8 @@
 {
     "name": "PWA-Demo",
     "short_name": "MyPWA",
-    "scope": "/pwa-demo",
-    "start_url": "./index.html",
+    "scope": "https://studickie.github.io/pwa-demo/",
+    "start_url": "./",
     "icons": [
         {
             "src": "./images/android-chrome-192x192.png",
