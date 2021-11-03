@@ -1,11 +1,11 @@
 const CACHE_NAME = 'pwa-demo-site-v1';
 const urlsToCache = [
-    '/',
-    '/styles/global.css',
-    '/images/image-1.JPG',
-    '/images/image-2.JPG',
-    '/images/image-3.JPG',
-    '/images/image-4.JPG'
+    'index.html',
+    'styles/global.css',
+    'images/image-1.JPG',
+    'images/image-2.JPG',
+    'images/image-3.JPG',
+    'images/image-4.JPG'
 ];
 
 self.addEventListener('install', installEvent => {
