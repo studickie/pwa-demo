@@ -33,7 +33,7 @@
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', () => {
                 navigator.serviceWorker
-                    .register('https://studickie.github.io/pwa-demo/serviceWorker.js', { scope: 'https://studickie.github.io/pwa-demo/' })
+                    .register('/pwa-demo/serviceWorker.js', { scope: '/pwa-demo/' })
                     .then(reg => {
                         console.log('service worker registered with scope: ', reg.scope);
                     })
